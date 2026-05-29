@@ -1,35 +1,21 @@
 @import './base.css';
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+#mainNav {
+  background-color: transparent !important;
+  transition: background-color 0.3s ease;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+#mainNav .navbar-brand,
+#mainNav .nav-link {
+  color: white !important;
+  transition: color 0.3s ease;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+#mainNav.navbar-scrolled {
+  background-color: white !important;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+#mainNav.navbar-scrolled .navbar-brand,
+#mainNav.navbar-scrolled .nav-link {
+  color: #000000 !important;
 }
